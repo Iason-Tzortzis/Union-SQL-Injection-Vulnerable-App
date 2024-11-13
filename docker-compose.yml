@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=${PORT}
+      - DUMMY_USER=${DUMMY_USER}
+      - DUMMY_PASS=${DUMMY_PASS}
